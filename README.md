@@ -79,7 +79,7 @@ Após as alterações feitas na base realizei a separação dos dados em treino 
 Após testar diversos tipos de modelos com parâmetros diferentes, o modelo final escolhido foi o de Regressão Logística, utilizando parâmetros 'C' = 0.001 e 'solver' = 'liblinear', a técnica de balanceamento escolhida foi o Random Under Sampling:
 
 ![UnderSampling Screen Shot][under-screenshot]
-![RL Screen Shot][rlr-screenshot]
+![RL Screen Shot][rl-screenshot]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,12 +91,12 @@ Desta forma o modelo que será utilizado será o modelo de Regressão Logística
 
 * 'C': 0.001
 * 'solver': 'liblinear'
-* 
+  
 Este modelo obteve como desempenho a seguinte matriz de confusão:
 
 * Das 93.825 transações não fraude, o modelo identificou 81.700 como não fraude e 12.125 como fraude, desta forma, aproximadamente 12,9% dos dados tiveram a previsão incorreta.
 * Das 162 transações fraude, o modelo identificou corretamente 152 como fraude e 10 como não fraude, desta forma, aproximadamente 6,17% dos dados tiveram a previsão incorreta.
-* 
+  
 Para este projeto escolhi como objetivo priorizar o "recall", que é referente as transações fraude, este modelo teve um recall de aproximadamente 93%, porém seria possível buscar outras formas de priorizar de acordo com as necessidades, podendo buscar uma melhor precisão, um modelo que buscasse o melhor para ambos, tudo dependendo da necessidade do projeto.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
